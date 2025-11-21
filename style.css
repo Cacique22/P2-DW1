@@ -11,7 +11,21 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
+}
+
+.menu-nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.botao-login{
+    background-color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer{
@@ -24,4 +38,13 @@ footer{
 
 footer p{
     font-size: 10px;
+}
+
+.botao-zap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
 }
