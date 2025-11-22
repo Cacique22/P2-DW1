@@ -28,6 +28,21 @@ nav{
     font-weight: bold;
 }
 
+.acai-sc {
+    background-image: url('https://blog.finamac.com/wp-content/uploads/2020/03/original-b311a43bc2bdadb8b1cac3109956d1f3.jpeg');
+    background-size: cover;      /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    height: 70vh;               /* Altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);                /* Para o texto aparecer sobre a imagem */
+    padding: 20px;
+}
+
+
 footer{
     background-color: grey;
     padding: 10px;
