@@ -4,19 +4,39 @@
     padding: 0;
     font-family: "TikTok Sans";
 }
+header{
+    color: aliceblue;
+    text-align: center;
+}
 
 nav{
     background-color: gray;
 }
 
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 footer{
     background-color: grey;
-    padding: 10px;
-    height: 25px;
-    display: grid;
-    
+    padding: 15px;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
+    align-content: end;
+    width: 100vw;
 }
 
 footer p{
     font-size: 10px;
+    color: aliceblue;
+    
+}
+
+footer img{
+    width: 25px;
+    display: inline-flex;
+    gap: 10px;
+
 }
