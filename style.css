@@ -14,6 +14,12 @@ nav{
     padding: 20px 20px;
 }
 
+.menu-nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .menu-nav a{
     margin-right: 15px;
     text-decoration: none;
@@ -28,27 +34,108 @@ nav{
     font-weight: bold;
 }
 
+/* SECAO AÇAI */
 .acai-sc {
-    background-image: url('https://blog.finamac.com/wp-content/uploads/2020/03/original-b311a43bc2bdadb8b1cac3109956d1f3.jpeg');
+    /* Escurece a imagem usando um overlay (linear-gradient) antes da URL */
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://blog.finamac.com/wp-content/uploads/2020/03/original-b311a43bc2bdadb8b1cac3109956d1f3.jpeg');   
     background-size: cover;      /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
-    height: 70vh;               /* Altura da tela */
+    height: 80vh;               /* Altura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(255, 255, 255);                /* Para o texto aparecer sobre a imagem */
+    color: rgb(255, 255, 255); /* Para o texto aparecer sobre a imagem */
     padding: 20px;
 }
 
+.acai-texto h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
 
+.acai-texto p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.botao-acai{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* SOBRE NÓS */
+.sobre-sc{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre-sc h1{
+    color: rgb(130, 0, 181);
+}
+
+.sobre-sc p{
+    font-size: 18px;
+    color: #333;
+    width: 50%;
+    margin: 30px auto;
+}
+
+/* PRODUTOS */
+.produtos-sc{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.produtos-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 60px;
+}
+
+.produtos-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem linha se necessário */
+}
+
+.produto-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 245, 232);
+}
+
+.produto-item img{
+    width: 30vh;
+    height: 40vh;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.botao-comprar{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* FOOTER */
 footer{
     background-color: grey;
     padding: 10px;
     height: 25px;
     display: grid;
-    
 }
 
 footer p{
@@ -62,4 +149,9 @@ footer p{
     width: 50px;
     height: 50px;
     display: flex;
+}
+
+.botao-zap img{
+    width: 75px;
+    height: 75px;
 }
