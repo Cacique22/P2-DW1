@@ -386,6 +386,7 @@ nav a{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .finalizar-pedido{
@@ -394,7 +395,6 @@ nav a{
     padding: 50px 100px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 40%;
