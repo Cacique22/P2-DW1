@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "TikTok Sans";
+    box-sizing: border-box;
 }
 
 nav{
@@ -12,6 +13,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .menu-nav{
@@ -114,7 +119,7 @@ nav{
 }
 
 .produto-item img{
-    width: 30vh;
+    width: 27vh;
     height: 40vh;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -130,16 +135,118 @@ nav{
     margin-top: 15px;
 }
 
+/* AVALIACOES */
+.avaliacoes-sc{
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.avaliacoes-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 40px;
+}
+
+.avaliacoes-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem linha se necessário */
+}
+
+.avaliacao-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 245, 232);
+}
+
+.avaliacao-item h3{
+    color: rgb(130, 0, 181);
+}
+
+/* CONTATO */
+.contato-sc{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contato-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contato-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contato-items iframe{
+    width: 100%;
+    margin-left: 20px;    
+}
+
+.contato-items form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.contato-items form input{
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-items textarea{
+    resize: none;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.botao-enviar{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 /* FOOTER */
 footer{
-    background-color: grey;
+    background-color: rgb(90, 68, 110);
     padding: 10px;
-    height: 25px;
     display: grid;
+    color: white;
 }
 
 footer p{
-    font-size: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.icones {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icones a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icones img {
+    width: 50px;
+    height: 50px;
 }
 
 .botao-zap{
