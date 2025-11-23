@@ -336,3 +336,94 @@ nav a{
 .login-sc a:hover{
     text-decoration: underline;
 }
+
+/* PAGINA 3 - CADASTRO */
+
+.pedido-sc{
+    display: flex;
+    padding: 30px;
+    background-color: rgb(252, 247, 255);
+}
+
+.pedido-lista{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 30px;
+}
+
+.pedido-item img{
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.pedido-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.pedido-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pedido-item button{
+    align-self: flex-start;
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.finalizar-pedido{
+    background-color: rgb(255, 255, 255);
+    color: rgb(130, 0, 181);
+    padding: 50px 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px auto;
+}
+
+.finalizar-pedido h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.finalizar-pedido p{
+    font-size: 18px;
+    text-align: left;
+    color: black;
+}
+
+.finalizar-pedido span{
+    font-weight: bold;
+    text-align: right;
+    color: black;
+    margin-top: 40vh;
+}
+
+.finalizar-pedido button{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
