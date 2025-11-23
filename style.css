@@ -29,6 +29,11 @@ nav{
     margin-right: 15px;
     text-decoration: none;
     color: white;
+    transition: 200ms;
+}
+
+.menu-nav a:hover{
+    font-size: 18px;;
 }
 
 .botao-login{
@@ -37,6 +42,10 @@ nav{
     border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
+}
+
+header{
+    margin-top: 70px; /* Espaço para o menu fixo */
 }
 
 /* SECAO AÇAI */
@@ -76,7 +85,7 @@ nav{
 
 /* SOBRE NÓS */
 .sobre-sc{
-    padding: 50px 20px;
+    padding: 90px 20px;
     text-align: center;
 }
 
@@ -93,7 +102,7 @@ nav{
 
 /* PRODUTOS */
 .produtos-sc{
-    padding: 50px 20px;
+    padding: 90px 20px;
     text-align: center;
 }
 
@@ -137,7 +146,7 @@ nav{
 
 /* AVALIACOES */
 .avaliacoes-sc{
-    padding: 50px 20px;
+    padding: 90px 20px;
     text-align: center;
 
 }
@@ -261,4 +270,69 @@ footer p{
 .botao-zap img{
     width: 75px;
     height: 75px;
+}
+
+/* pagina 2 */
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+.login-sc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 25%;
+    margin: 100px auto;
+    background-color: rgb(252, 247, 255);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-sc form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.login-sc h2{
+    color: rgb(130, 0, 181);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-sc input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-sc button{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.login-sc p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-sc a{
+    text-decoration: none;
+    color: rgb(130, 0, 181);
+}
+
+.login-sc a:hover{
+    text-decoration: underline;
 }
