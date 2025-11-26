@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Açai Double R</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="response.css">
     <link rel="shortcut icon" href="https://images.icon-icons.com/2879/PNG/512/blueberry_food_fruit_icon_182563.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <script src="script.js" defer   ></script>
 </head>
 <body>
 
     <header>
         <nav>
-            <h1>Açaí Double R</h1>
-            <div class="menu-nav">
+            <h1 id="title">Açaí Double R</h1>
+            <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <div class="menu-nav" id="itens">
                 <a class="nav" href="#">Home</a>
                 <a class="nav" href="#sobre-sc">Sobre</a>
                 <a class="nav" href="#produtos-sc">Produtos</a>
@@ -95,16 +99,16 @@
 
         <section class="contato-sc" id="contato-sc">
             <h1>Contato</h1>
-            <div class="contato-items">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.7954594172683!2d-46.41235490536223!3d-24.005403201892452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db2e586da8d%3A0x271ae3e10bdc671e!2sFatec%20Praia%20Grande!5e0!3m2!1spt-BR!2sbr!4v1763861887402!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contato-itens">
                 <form action="">
                     <input type="text" placeholder="Seu nome">
                     <input type="email" placeholder="Seu email">
                     <textarea placeholder="Sua mensagem" ></textarea>
                     <button class="botao-enviar" onclick="">Enviar Mensagem</button>
-                    <p>Telefone:(11)99621-5377</p>
+                    <p>Telefone: (11) 99621-5377</p>
                     <p>Email: contato@doubleracai.com.br</p>
                     </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.7954594172683!2d-46.41235490536223!3d-24.005403201892452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db2e586da8d%3A0x271ae3e10bdc671e!2sFatec%20Praia%20Grande!5e0!3m2!1spt-BR!2sbr!4v1763861887402!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -112,13 +116,14 @@
 
 
     <footer>
-        <p>&copy; 2025 *********. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Açaí Double R. Todos os direitos reservados.</p>
         <div class="icones">
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png " alt="icone do whatsapp"></a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="icone do instagram"></a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="icone do facebook"></a>
         </div>
-        <a href="https://wa.me/551340028922" class="botao-zap"><img src="img/whatsapp.png" alt="icone do whatsapp"></a>
+        <a id="wpp" href="https://wa.me/551340028922" class="botao-zap"><img src="img/whatsapp.png" alt="icone do whatsapp"></a>
     </footer>
+
 </body>
 </html>

@@ -23,6 +23,10 @@ nav{
     z-index: 1000;
 }
 
+#menu{
+    display: none;
+}
+
 .menu-nav{
     display: flex;
     align-items: center;
@@ -37,7 +41,7 @@ nav{
 }
 
 .menu-nav a:hover{
-    font-size: 18px;;
+    font-size: 18px;
 }
 
 .botao-login{
@@ -106,7 +110,7 @@ header{
 
 /* PRODUTOS */
 .produtos-sc{
-    padding: 90px 20px;
+    padding:10px 20px 40px 20px;
     text-align: center;
 }
 
@@ -132,11 +136,13 @@ header{
 }
 
 .produto-item img{
-    width: 27vh;
-    height: 40vh;
+    width: 35vh;
+    height: 35vh;
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
+
 
 .botao-comprar{
     background-color: rgb(130, 0, 181);
@@ -192,7 +198,7 @@ header{
     text-align: center;
 }
 
-.contato-items{
+.contato-itens{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -200,25 +206,26 @@ header{
     gap: 50px;
 }
 
-.contato-items iframe{
+.contato-itens iframe{
     width: 100%;
-    margin-left: 20px;    
+    margin-right: 20px;
+       
 }
 
-.contato-items form{
+.contato-itens form{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-right: 20px;
+    margin-left: 20px;   
 }
 
-.contato-items form input{
+.contato-itens form input{
     padding: 4px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.contato-items textarea{
+.contato-itens textarea{
     resize: none;
     height: 250px;
     border-radius: 5px;
@@ -271,9 +278,11 @@ footer p{
     display: flex;
 }
 
-.botao-zap img{
+.botao-zap{
     width: 75px;
     height: 75px;
+    margin-right: 5px; 
+    margin-bottom: 5px;
 }
 
 /* pagina 2 */

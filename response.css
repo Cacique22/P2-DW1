@@ -1,0 +1,167 @@
+@media (max-width: 534px){
+
+    /* Nav */
+    #menu {
+        display: inline-flex;
+        justify-content: space-between;
+        margin-left: 90px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #title {
+        font-size: 30px;
+        display: inline-flex;
+    }
+
+    #itens{
+        display: none;
+    }
+
+    .menu-nav{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-nav a{
+        transition: 200ms;
+    }
+
+    .menu-nav a:hover{
+        font-size: 18px;
+
+    }
+
+    /* Sobre nós */
+
+    .sobre-sc{
+        padding: 70px 20px;
+    }
+
+    .sobre-sc p{
+        font-size: 18px;
+        color: #333;
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    /* Contato e Mapa */
+    .contato-itens {
+        display: inline-flex;
+    }
+
+    .contato-itens form{
+        margin-left: 0px;
+    }
+
+    .contato-itens iframe{ 
+        margin-right: 0px;
+        width: 300px;
+        height: 400px;
+    }
+
+    /* Footer */
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .icones img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .botao-zap{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    /* Nav */
+    #menu {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #title {
+        font-size: 30px;
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    #itens{
+        display: none;
+    }
+
+    .menu-nav{
+        font-size: 18px;
+        display: flex;
+        padding-top: 5px;
+        justify-content: center;
+    }
+
+    .menu-nav a{
+        transition: 200ms;
+        margin-right: 0px;
+    }
+
+    .menu-nav a:hover{
+        font-size: 18px;
+
+    }
+
+    /* Sobre nós */
+
+    .sobre-sc{
+        padding: 70px 20px;
+    }
+
+    .sobre-sc p{
+        font-size: 18px;
+        color: #333;
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    /* Contato e Mapa */
+    .contato-itens {
+        display: inline-flex;
+    }
+
+    .contato-itens form{
+        margin-left: 0px;
+    }
+
+    .contato-itens iframe{ 
+        margin-right: 0px;
+        width: 300px;
+        height: 400px;
+    }
+
+    /* Footer */
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .icones img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #wpp {
+        display: none;
+    }
+
+}

@@ -48,4 +48,16 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Credenciais incorretas
         mensagemErro.textContent = 'Usuário ou senha inválidos. Tente novamente.';
     }
+
+   
 });
+
+    function clickMenu() {
+           if (itens.style.display == 'flex'){
+            itens.style.display = 'none'
+            } else { 
+                itens.style.display = 'flex'
+            }
+         }
+
+    
