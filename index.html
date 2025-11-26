@@ -3,31 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Açai Double R</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="shortcut icon" href="https://images.icon-icons.com/2879/PNG/512/blueberry_food_fruit_icon_182563.png" type="image/x-icon">
 </head>
 <body>
 
     <header>
         <nav>
-            <h1>NomeAleatório</h1>
-           <a class="nav" href="">Home</a>
-           <a class="nav" href="">Sobre</a>
-           <a class="nav" href="">Produtos</a>
-           <a class="nav" href="">Avaliações</a>
-           <a class="nav" href="">Contato</a>
+            <h1>Açaí Double R</h1>
+            <div class="menu-nav">
+                <a class="nav" href="#">Home</a>
+                <a class="nav" href="#sobre-sc">Sobre</a>
+                <a class="nav" href="#produtos-sc">Produtos</a>
+                <a class="nav" href="#avaliacoes-sc">Avaliações</a>
+                <a class="nav" href="#contato-sc">Contato</a>
+                <a class="botao-login" style="color: rgb(130, 0, 181);" href="login.html">Login</a>
+            </div>
         </nav>
     </header>
 
-    <main></main>
+
+    <main>
+
+        <section class="acai-sc">
+            <div class="acai-texto">
+                <h1>O melhor Açaí da cidade</h1>
+                <p>Refrescante, cremoso e feito com ingredientes naturais</p>
+
+                <a href="#">
+                <button class="botao-acai" onclick="">Ver Cardápio</button>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="sobre-sc" id="sobre-sc">
+            <h1>Sobre Nós</h1>
+            <p>Na Açaí Double R, nossa missão é proporcionar a você a melhor experiência com açaí. Utilizamos ingredientes frescos e naturais para criar combinações deliciosas que agradam todos os paladares. Venha nos visitar e descubra por que somos o destino favorito dos amantes de açaí!</p>
+        </section>
+
+        <section class="produtos-sc" id="produtos-sc">
+            <h1>Produtos em Destaque</h1>
+            <div class="produtos-container">
+                <div class="produto-item">
+                    <img src="img/acai_frutas.png" alt="Açai com frutas">
+                    <h2>Açaí com Frutas</h2>
+                    <p>Delicioso açaí servido com uma variedade de frutas frescas.</p>
+                    <a href="login.html"><button class="botao-comprar" onclick="">
+                        Comprar
+                    </button></a>
+                </div>
+
+                <div class="produto-item">
+                    <img src="img/acai_granola.png" alt="Açai com granola">
+                    <h2>Açaí com Granola</h2>
+                    <p>Cremoso açaí acompanhado de crocante granola artesanal.</p>
+                    <a href="login.html"><button class="botao-comprar" onclick="">
+                        Comprar
+                    </button></a>
+                </div>
+
+                <div class="produto-item">
+                    <img src="img/acai_pote.png" alt="Açai no pote">
+                    <h2>Açaí no Pote (200ml)</h2>
+                    <p>Cremoso, geladinho e perfeito para refrescar o seu dia com muito sabor e energia.</p>
+                    <a href="login.html"><button class="botao-comprar" onclick="">
+                        Comprar
+                    </button></a>
+                </div>
+        </section>
+
+        
+        <section class="avaliacoes-sc" id="avaliacoes-sc">
+            <h1>Avaliações dos Clientes</h1>
+            <div class="avaliacoes-container">
+                <div class="avaliacao-item">
+                    <p>"O melhor açaí que já experimentei! Sempre fresco e com ótimas combinações de frutas."</p>
+                    <h3>- Maria S.</h3>
+                </div>
+                <div class="avaliacao-item">
+                    <p>"Adoro a variedade de toppings que eles oferecem. A granola é simplesmente incrível!"</p>
+                    <h3>- João P.</h3>
+                </div>
+                <div class="avaliacao-item">
+                    <p>"Ótimo atendimento e ambiente agradável. Recomendo para todos os amantes de açaí."</p>
+                    <h3>- Ana L.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato-sc" id="contato-sc">
+            <h1>Contato</h1>
+            <div class="contato-items">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.7954594172683!2d-46.41235490536223!3d-24.005403201892452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db2e586da8d%3A0x271ae3e10bdc671e!2sFatec%20Praia%20Grande!5e0!3m2!1spt-BR!2sbr!4v1763861887402!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="">
+                    <input type="text" placeholder="Seu nome">
+                    <input type="email" placeholder="Seu email">
+                    <textarea placeholder="Sua mensagem" ></textarea>
+                    <button class="botao-enviar" onclick="">Enviar Mensagem</button>
+                    <p>Telefone:(11)99621-5377</p>
+                    <p>Email: contato@doubleracai.com.br</p>
+                    </form>
+            </div>
+        </section>
+
+    </main>
+
 
     <footer>
         <p>&copy; 2025 *********. Todos os direitos reservados.</p>
-        <a href="https://wa.me/551340028922"><img src="img/whatsapp.png" alt="icone do whatsapp"></a>
-        <a href="https://www.instagram.com/virginia/?hl=pt-br"><img src="img/instagram.png" alt="icone do instagram"></a>
-        <a href="https://www.facebook.com/p/Virginia-Fonseca-100065151476470/?locale=pt_BR"><img src="img/facebook.png" alt="icone do instagram"></a>
-
+        <div class="icones">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png " alt="icone do whatsapp"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="icone do instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="icone do facebook"></a>
+        </div>
+        <a href="https://wa.me/551340028922" class="botao-zap"><img src="img/whatsapp.png" alt="icone do whatsapp"></a>
     </footer>
 </body>
 </html>

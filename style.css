@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "TikTok Sans";
+    box-sizing: border-box;
 }
 header{
     color: aliceblue;
@@ -10,33 +11,423 @@ header{
 }
 
 nav{
-    background-color: gray;
+    background-color: rgb(130, 0, 181);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav a{
+.menu-nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-nav a{
+    margin-right: 15px;
     text-decoration: none;
-    color: aliceblue;
+    color: white;
+    transition: 200ms;
 }
 
-footer{
-    background-color: grey;
-    padding: 15px;
-    height: 55px;
+.menu-nav a:hover{
+    font-size: 18px;;
+}
+
+.botao-login{
+    background-color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    margin-top: 70px; /* Espaço para o menu fixo */
+}
+
+/* SECAO AÇAI */
+.acai-sc {
+    /* Escurece a imagem usando um overlay (linear-gradient) antes da URL */
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://blog.finamac.com/wp-content/uploads/2020/03/original-b311a43bc2bdadb8b1cac3109956d1f3.jpeg');   
+    background-size: cover;      /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    height: 80vh;               /* Altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    display: inline-block;
-    align-content: end;
-    width: 100vw;
+    color: rgb(255, 255, 255); /* Para o texto aparecer sobre a imagem */
+    padding: 20px;
+}
+
+.acai-texto h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.acai-texto p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.botao-acai{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* SOBRE NÓS */
+.sobre-sc{
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.sobre-sc h1{
+    color: rgb(130, 0, 181);
+}
+
+.sobre-sc p{
+    font-size: 18px;
+    color: #333;
+    width: 50%;
+    margin: 30px auto;
+}
+
+/* PRODUTOS */
+.produtos-sc{
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.produtos-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 60px;
+}
+
+.produtos-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem linha se necessário */
+}
+
+.produto-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 245, 232);
+}
+
+.produto-item img{
+    width: 27vh;
+    height: 40vh;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.botao-comprar{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* AVALIACOES */
+.avaliacoes-sc{
+    padding: 90px 20px;
+    text-align: center;
+
+}
+
+.avaliacoes-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 40px;
+}
+
+.avaliacoes-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem linha se necessário */
+}
+
+.avaliacao-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 245, 232);
+}
+
+.avaliacao-item h3{
+    color: rgb(130, 0, 181);
+}
+
+/* CONTATO */
+.contato-sc{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contato-sc h1{
+    color: rgb(130, 0, 181);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contato-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contato-items iframe{
+    width: 100%;
+    margin-left: 20px;    
+}
+
+.contato-items form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.contato-items form input{
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-items textarea{
+    resize: none;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.botao-enviar{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(90, 68, 110);
+    padding: 10px;
+    display: grid;
+    color: white;
 }
 
 footer p{
-    font-size: 10px;
-    color: aliceblue;
-    
+    font-size: 16px;
+    text-align: center;
 }
 
-footer img{
-    width: 25px;
-    display: inline-flex;
-    gap: 10px;
+.icones {
+    margin-top: 10px;
+    text-align: center;
+}
 
+.icones a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icones img {
+    width: 50px;
+    height: 50px;
+}
+
+.botao-zap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.botao-zap img{
+    width: 75px;
+    height: 75px;
+}
+
+/* pagina 2 */
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+.login-sc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 25%;
+    margin: 100px auto;
+    background-color: rgb(252, 247, 255);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-sc form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.login-sc h2{
+    color: rgb(130, 0, 181);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-sc input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-sc button{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.login-sc p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-sc a{
+    text-decoration: none;
+    color: rgb(130, 0, 181);
+}
+
+.login-sc a:hover{
+    text-decoration: underline;
+}
+
+/* PAGINA 3 - CADASTRO */
+
+.pedido-sc{
+    display: flex;
+    padding: 30px;
+    background-color: rgb(252, 247, 255);
+}
+
+.pedido-lista{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 30px;
+}
+
+.pedido-item img{
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.pedido-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.pedido-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pedido-item button{
+    align-self: flex-start;
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.finalizar-pedido{
+    background-color: rgb(255, 255, 255);
+    color: rgb(130, 0, 181);
+    padding: 50px 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px auto;
+}
+
+.finalizar-pedido h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.finalizar-pedido p{
+    font-size: 18px;
+    text-align: left;
+    color: black;
+}
+
+.finalizar-pedido span{
+    font-weight: bold;
+    text-align: right;
+    color: black;
+    margin-top: 40vh;
+}
+
+.finalizar-pedido button{
+    background-color: rgb(130, 0, 181);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
