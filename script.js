@@ -25,3 +25,14 @@ function clickMenu() {
         }
         }
 
+const addProdutoCarrinhoBotao = document.getElementsByClassName('add-carrinho')
+for (var i = 0; i < addProdutoCarrinhoBotao.length; i++){
+    addProdutoCarrinhoBotao[i].addEventListener('click',addProdutoCarrinho);
+    
+    }
+
+
+function addProdutoCarrinho(event){
+    const button = event.target
+    console.log(button)
+}
