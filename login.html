@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <script src="script.js" defer   ></script>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html"><h1>Açaí Double R</h1></a>
-            <div class="menu-nav">
-                <a class="nav" href="index.html">Home</a>
-                <a class="nav" href="index.html#sobre-sc">Sobre</a>
-                <a class="nav" href="index.html#produtos-sc">Produtos</a>
-                <a class="nav" href="index.html#avaliacoes-sc">Avaliações</a>
-                <a class="nav" href="index.html#contato-sc">Contato</a>
+         <nav>
+            <h1 id="title">Açaí Double R</h1>
+            <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <div class="menu-nav" id="itens">
+                <a class="nav" href="#">Home</a>
+                <a class="nav" href="#sobre-sc">Sobre</a>
+                <a class="nav" href="#produtos-sc">Produtos</a>
+                <a class="nav" href="#avaliacoes-sc">Avaliações</a>
+                <a class="nav" href="#contato-sc">Contato</a>
+                <a class="botao-login" style="color: rgb(130, 0, 181);" href="login.html">Login</a>
             </div>
-        </nav>
     </header>
 
     <main>

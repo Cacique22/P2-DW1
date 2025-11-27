@@ -380,7 +380,6 @@ nav a{
     margin: 10px;
     background-color: white;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     gap: 16px;
 }
