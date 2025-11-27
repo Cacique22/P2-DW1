@@ -1,16 +1,27 @@
-function login() {
-    
+function loginUsuario() {
 
-    var user = document.getElementById('login').value;
+
+    var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
+    var usuario1 = "rickelme";
+    var senha1 = "12345678";
+    var usuario2 = "ryan";
+    var senha2 = "87654321";
 
-        if (user == 'rick' && senha == '12345678') {
-            alert('Login realizado com sucesso!')
-        
-            } else if (user == 'ryan' && passworduser == '87654321') {
-                alert('Login realizado com sucesso!')
-            
-                } else {
-                    alert('Login ou senha incorretos. Tente novamente.')
-                }
+    if((login == usuario1 && senha == senha1) || (login == usuario2 && senha == senha2)){
+        window.alert("Login realizado com sucesso!");
+        location.href = "pedido.html";
+    } else {
+        window.alert("Login ou senha incorretos!");
+    }   
 }
+
+
+function clickMenu() {
+        if (itens.style.display == 'flex'){
+        itens.style.display = 'none'
+        } else { 
+            itens.style.display = 'flex'
+        }
+        }
+

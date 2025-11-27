@@ -25,14 +25,16 @@
 
     <main>
         <section class="login-sc">
+
             <h2>Login</h2>
             <form id="LoginForm">
-                <input type="text" id="login" name="login-user" placeholder="Email" required>
+                <input type="text" id="login" name="login" placeholder="Email" required>
                 
-                <input type="password" id="senha" name="password-user" required placeholder="Senha" minlength="8">
+                <input type="password" id="senha" name="senha" required placeholder="Senha" minlength="8">
                 
-                <input type="submit" onclick="login()">
+                <input type="submit" id="botao-enviar" onclick="loginUsuario(); return false;" >
             </form>
+
             <p>Não tem Conta? <a href="#">Registre-se</a></p>
             <p><a href="#">Esqueceu a senha?</a></p>
         </section>
