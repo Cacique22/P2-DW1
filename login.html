@@ -26,12 +26,12 @@
     <main>
         <section class="login-sc">
             <h2>Login</h2>
-            <form action="" method="" id="LoginForm">
-                <input type="email" id="email" name="email" placeholder="Email" required>
+            <form id="LoginForm">
+                <input type="text" id="login" name="login-user" placeholder="Email" required>
                 
-                <input type="password" id="password" name="password" required placeholder="Senha">
+                <input type="password" id="senha" name="password-user" required placeholder="Senha" minlength="8">
                 
-                <button type="submit">Entrar</button>
+                <input type="submit" onclick="login()">
             </form>
             <p>Não tem Conta? <a href="#">Registre-se</a></p>
             <p><a href="#">Esqueceu a senha?</a></p>
