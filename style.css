@@ -56,6 +56,11 @@ header{
     margin-top: 70px; /* Espaço para o menu fixo */
 }
 
+.R{
+    color: rgb(255, 215, 0);
+    font-weight: bold;
+}
+
 /* SECAO AÇAI */
 .acai-sc {
     /* Escurece a imagem usando um overlay (linear-gradient) antes da URL */
@@ -141,7 +146,8 @@ header{
 }
 
 .produto-item p{
-    max-width: 300px;
+    max-width: 350px;
+    text-align: center;
 }
 
 
