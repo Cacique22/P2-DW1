@@ -18,10 +18,10 @@ function loginUsuario() {
 
 
 function clickMenu() {
-        if (itens.style.display == 'flex'){
-        itens.style.display = 'none'
+        if (itens.classList.contains('active')){
+        itens.classList.remove('active')
         } else { 
-            itens.style.display = 'flex'
+            itens.classList.add('active')
         }
         }
 
