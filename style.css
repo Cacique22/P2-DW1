@@ -130,16 +130,18 @@ header{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
     text-align: center;
     background-color: rgb(255, 245, 232);
 }
 
 .produto-item img{
-    width: 35vh;
-    height: 35vh;
+    width: 20vw;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.produto-item p{
+    max-width: 300px;
 }
 
 
@@ -300,7 +302,8 @@ nav a{
     align-items: center;
     flex-direction: column;
     padding: 30px;
-    width: 25%;
+    width: 500px;
+    max-width: 90%;
     margin: 100px auto;
     background-color: rgb(252, 247, 255);
     border-radius: 10px;
@@ -404,12 +407,12 @@ nav a{
 .finalizar-pedido{
     background-color: rgb(255, 255, 255);
     color: rgb(130, 0, 181);
-    padding: 50px 100px;
+    padding: 50px 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     margin: 40px auto;
 }
 

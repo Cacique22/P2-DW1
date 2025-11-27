@@ -47,6 +47,11 @@
         width: 85%;
         margin: 30px auto;
     }
+    /* Produtos */
+
+    .produto-item img{
+        width: 60vw;
+    }
 
     /* Contato e Mapa */
     .contato-itens {
@@ -55,11 +60,12 @@
 
     .contato-itens form{
         margin-left: 0px;
+        width: 80vw;
     }
 
     .contato-itens iframe{ 
         margin-right: 0px;
-        width: 300px;
+        width: 400px;
         height: 400px;
     }
 
@@ -79,7 +85,7 @@
         display: none;
     }
 
-    /* pag 2 */
+    /* pag 3*/
 
     /* Nav */
 
@@ -93,10 +99,19 @@
         justify-items: center;
     }
 
+    .pedido-lista p{
+        font-size: 13px;
+    }
+
+    .pedido-item h2{
+        font-size: 23px;
+    }
+
     .pedido-item{
         gap: 0px;
         display: inline-block;
         width: 70vw;
+        text-align: center;
     }
 
     .pedido-item img{
@@ -119,6 +134,10 @@
         text-align: center;
     }
 
+    .finalizar-pedido{
+        width: 80vw;
+        padding: 25px 50px;
+    }
     
 }
 
@@ -205,5 +224,105 @@
         display: none;
     }
 
+
+    /*Pagina 3*/
+
+     .pedido-sc {
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    .pedido-lista{
+        display: grid;
+        justify-items: center;
+    }
+
+    .pedido-lista p{
+        font-size: 13px;
+    }
+
+    .pedido-item h2{
+        font-size: 23px;
+    }
+
+    .pedido-item{
+        display: inline-block;
+        width: 70vw;
+        text-align: center;
+
+    }
+
+    .pedido-item img{
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .pedido-info button{
+        margin-left: 5px
+    }
+
+    .pedido-info span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .finalizar-pedido{
+        width: 80vw;
+        padding: 25px 50px;
+    }
+
+} 
+
+/* Responsividade da pagina de pedidos*/
+
+@media (max-width: 1080px){
+
+    .pedido-lista{
+        display: grid;
+        justify-items: center;
+    }
+
+    .pedido-item{
+        gap: 0px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .pedido-item img{
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .pedido-lista p{
+        font-size: 13px;
+    }
+
+    .pedido-item h2{
+        font-size: 23px;
+    }
+
+    .pedido-info button{
+        margin-left: 5px
+    }
+
+    .pedido-info span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
+
+
 
