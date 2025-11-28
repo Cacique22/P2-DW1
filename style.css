@@ -535,10 +535,3 @@ nav a{
     margin-bottom: auto;
 }
 
-/* responsivo */
-@media (max-width: 760px){
-    .pedido-carrinho-item{ width: 100%; padding: 10px; }
-    .pedido-carrinho-img{ width: 64px; height: 64px; }
-    .pedido-carrinho-nome{ font-size: 15px; }
-    .pedido-carrinho-actions{ position: static; margin-left: auto; }
-}
