@@ -16,11 +16,25 @@ function loginUsuario() {
 }
 
 function clickMenu() {
+<<<<<<< HEAD
     var itens = document.getElementById('itens')
     if (itens.style.display == 'flex'){
         itens.style.display = 'none'
     } else { 
         itens.style.display = 'flex'
+=======
+        if (itens.classList.contains('active')){
+        itens.classList.remove('active')
+        } else { 
+            itens.classList.add('active')
+        }
+        }
+
+const addProdutoCarrinhoBotao = document.getElementsByClassName('add-carrinho')
+for (var i = 0; i < addProdutoCarrinhoBotao.length; i++){
+    addProdutoCarrinhoBotao[i].addEventListener('click',addProdutoCarrinho);
+    
+>>>>>>> 97e7e606348216d80445f6ecf86c6fa45ad2f277
     }
 }
 

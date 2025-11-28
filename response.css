@@ -1,23 +1,35 @@
 @media (max-width: 534px) and (min-width: 350px){
 
     /* Nav */
-    #menu {
-        display: inline-flex;
-        justify-content: space-between;
-    }
-
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     #title {
         font-size: 30px;
-        display: inline-flex;
+        order: 1;
+    }
+
+    #menu {   /* icone do menu */
+        display: block;
+        order: 2;
     }
 
     #itens{
         display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(130, 0, 181);
+        padding: 10px 0;
+    }
+
+    #itens.active {
+        display: flex;
     }
 
     .menu-nav{
@@ -149,33 +161,48 @@
 
 }
 
+<<<<<<< HEAD
 @media (max-width: 800px) and (min-width: 535px){
+=======
+@media (max-width: 800px) and ( min-width: 535px){
+>>>>>>> 97e7e606348216d80445f6ecf86c6fa45ad2f277
 
     /* Nav */
-    #menu {
-        display: inline-flex;
-        justify-content: space-between;
-    }
-
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     #title {
         font-size: 30px;
-        display: inline-flex;
-        margin-left: auto;
+        order: 1;
+    }
+
+    #menu {   /* icone do menu */
+        display: block;
+        order: 2;
     }
 
     #itens{
         display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(130, 0, 181);
+        padding: 10px 0;
+    }
+
+    #itens.active {
+        display: flex;
     }
 
     .menu-nav{
         font-size: 18px;
         display: flex;
-        padding-top: 5px;
-        justify-content: center;
+        flex-direction: column;
     }
 
     .menu-nav a{
