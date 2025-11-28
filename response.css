@@ -323,7 +323,7 @@
 
 /* Responsividade da pagina de pedidos*/
 
-@media (max-width: 1080px){
+@media (max-width: 1333px){
 
     .pedido-lista{
         display: grid;
