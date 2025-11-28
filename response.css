@@ -13,6 +13,7 @@
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
+        border-bottom: 2px solid rgb(130, 0, 181);
     }
 
     #title {
@@ -63,6 +64,7 @@
     .sobre-sc p {
         font-size: 14px;
         width: 90%;
+        display: grid;
     }
 
     /* Produtos */
@@ -155,6 +157,10 @@
         width: 25px;
         height: 25px;
     }
+
+    .botao-zap {
+        display: none;
+    }
 }
 
 
@@ -242,7 +248,7 @@
 
     .contato-itens iframe{ 
         margin-right: 0px;
-        width: 400px;
+        width: 90vw;
         height: 400px;
     }
 
@@ -431,6 +437,7 @@
      .pedido-sc {
         display: grid;
         justify-content: center;
+        padding-bottom: 4em;
         
     }
 
@@ -478,6 +485,8 @@
         width: 80vw;
         padding: 25px 50px;
     }
+
+
 
 } 
 

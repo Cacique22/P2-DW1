@@ -421,7 +421,7 @@ nav a{
     flex-direction: column;
     width: 80%;
     margin: 25px auto;
-    height: 30%;
+    height: 100%;
 }
 
 .finalizar-pedido h2{

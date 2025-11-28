@@ -3,9 +3,9 @@ function loginUsuario() {
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
     var usuario1 = "rickelme";
-    var senha1 = "12345678";
+    var senha1 = "1291392522018";
     var usuario2 = "ryan";
-    var senha2 = "87654321";
+    var senha2 = "1291392522004";
 
     if((login == usuario1 && senha == senha1) || (login == usuario2 && senha == senha2)){
         window.alert("Login realizado com sucesso!");
