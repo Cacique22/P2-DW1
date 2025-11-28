@@ -23,26 +23,22 @@ function clickMenu() {
         }
         }
 
-// --- carrinho (remontado) ---
 const addProdutoCarrinhoBotao = document.getElementsByClassName('add-carrinho')
 
 const finalizarDiv = document.getElementsByClassName('finalizar-pedido')[0]
 const finalizarBtn = finalizarDiv ? finalizarDiv.querySelector('button') : null
 const totalSpan = finalizarDiv ? finalizarDiv.querySelector('span') : null
 
-// lista visual do carrinho (wrapper criado ou encontrado)
 let carrinhoLista = null
 if (finalizarDiv) {
     carrinhoLista = finalizarDiv.querySelector('.pedido-carrinho-lista')
     if (!carrinhoLista) {
         carrinhoLista = document.createElement('div')
         carrinhoLista.className = 'pedido-carrinho-lista'
-        // insere antes do total span (mesma posição que você tinha)
         finalizarDiv.insertBefore(carrinhoLista, totalSpan)
     }
 }
 
-// placeholder/mensagem dentro do bloco de finalização (se existir)
 const placeholderP = finalizarDiv ? finalizarDiv.querySelector('p') : null
 
 let totalCarrinho = 0.0
@@ -69,7 +65,6 @@ function atualizarUICarrinho(){
     if (finalizarBtn) finalizarBtn.disabled = !temItens
 }
 
-// função que adiciona item (adaptada do seu e do exemplo)
 function addProdutoCarrinho(event){
     const button = event.currentTarget || event.target
     const card = button.closest('.pedido-item') || button.closest('.produto-item') || button.parentElement
@@ -78,7 +73,6 @@ function addProdutoCarrinho(event){
     const produImg = produImgEl ? produImgEl.src : ''
     const produNomeEl = produInfo.getElementsByClassName("pedido-nome")[0]
     const produNome = produNomeEl ? produNomeEl.innerText.trim() : 'Produto'
-    // tenta obter preço
     let produPreco = ''
     const elPreco = produInfo.getElementsByClassName("pedido-preco")[0]
     if (elPreco) {
@@ -91,10 +85,8 @@ function addProdutoCarrinho(event){
     }
     const precoNum = parsePreco(produPreco)
 
-    // se placeholder presente e vazio, remove a mensagem
     if (placeholderP) placeholderP.style.display = 'none'
 
-    // cria item do carrinho (estrutura simples e compatível com seu CSS)
     const item = document.createElement('div')
     item.className = 'pedido-carrinho-item'
     item.dataset.preco = precoNum
@@ -110,45 +102,40 @@ function addProdutoCarrinho(event){
         </div>
     `
 
-    // anexar ao DOM
     carrinhoLista.appendChild(item)
 
-    // evento remover
+
     const btnRemover = item.querySelector('.remover-carrinho')
     btnRemover.addEventListener('click', function(){
         removerProdutoCarrinho(item)
     })
 
-    // atualizar total
+
     totalCarrinho += precoNum
     atualizarUICarrinho()
 }
 
-// remover e ajustar total
 function removerProdutoCarrinho(elemento){
     const preco = parseFloat(elemento.dataset.preco) || 0
     totalCarrinho -= preco
     if (totalCarrinho < 0) totalCarrinho = 0
     elemento.remove()
-    // se ficou vazio, exibe placeholder
+
     const temItens = carrinhoLista && carrinhoLista.querySelectorAll('.pedido-carrinho-item').length > 0
     if (!temItens && placeholderP) placeholderP.style.display = 'block'
     atualizarUICarrinho()
 }
 
-// somar/atualizar total externo (caso queira usar diretamente)
 function somarTotal(valor){
     totalCarrinho += valor
     if (totalCarrinho < 0) totalCarrinho = 0
     atualizarUICarrinho()
 }
 
-// inicializa listeners nos botões existentes
 for (let i = 0; i < addProdutoCarrinhoBotao.length; i++){
     addProdutoCarrinhoBotao[i].addEventListener('click', addProdutoCarrinho)
 }
 
-// Finalizar compra (comportamento simples)
 if (finalizarBtn){
     finalizarBtn.addEventListener('click', function(){
         const temItens = carrinhoLista && carrinhoLista.querySelectorAll('.pedido-carrinho-item').length > 0
@@ -164,6 +151,3 @@ if (finalizarBtn){
         atualizarUICarrinho()
     })
 }
-
-// atualiza UI inicial
-atualizarUICarrinho()
