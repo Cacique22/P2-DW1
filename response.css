@@ -1,4 +1,4 @@
-@media (max-width: 534px){
+@media (max-width: 534px) and (min-width: 350px){
 
     /* Nav */
     #menu {
@@ -134,14 +134,22 @@
         text-align: center;
     }
 
+    .pedido-carrinho-item h3{
+        font-size: 14px;
+    }
+
+    .pedido-carrinho-preco{
+        font-size: 12px;
+    }
+
     .finalizar-pedido{
         width: 80vw;
-        padding: 25px 50px;
+        padding: 25px 15px;
     }
-    
+
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) and (min-width: 535px){
 
     /* Nav */
     #menu {

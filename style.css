@@ -391,6 +391,7 @@ nav a{
     display: flex;
     align-items: flex-start;
     gap: 16px;
+    height: 380px;
 }
 
 .pedido-info{
@@ -419,7 +420,7 @@ nav a{
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 40px auto;
+    margin: 25px auto;
 }
 
 .finalizar-pedido h2{
@@ -447,4 +448,94 @@ nav a{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* carrinho: itens lado a lado, cartão compacto semelhante aos produtos */
+.pedido-carrinho-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 12px;
+    background: #fbf9fc;
+    border-radius: 8px;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+
+/* cartões compactos, altura automática */
+.pedido-carrinho-item{
+    display: inline-flex;
+    gap: 14px;
+    align-items: center;
+    background: #fff;
+    width: 95%;
+    border: 1px solid #e9e4ec;
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    height: auto;
+    overflow: visible;
+    position: relative; /* ADICIONAR */
+}
+
+/* imagem menor e fixa */
+.pedido-carrinho-img{
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* conteúdo do cartão ajusta ao conteúdo (nome pode quebrar linha) */
+.pedido-carrinho-info{
+    gap: 6px;
+    min-width: 0;
+}
+
+.pedido-carrinho-nome{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.1;
+    white-space: normal;
+    overflow: visible;
+}
+
+/* preço junto ao conteúdo, não empurra altura */
+.pedido-carrinho-preco{
+    font-weight: 700;
+    color: #000;
+    align-self: flex-start;
+    margin-top: 6px;
+}
+
+/* botão remover posicionado sem inflar cartão */
+.pedido-carrinho-actions{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+    display: flex;
+    gap: 6px;
+}
+
+/* estilo do botão para garantir visibilidade */
+.remover-carrinho{
+    background: rgb(130,0,181);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* responsivo */
+@media (max-width: 760px){
+    .pedido-carrinho-item{ width: 100%; padding: 10px; }
+    .pedido-carrinho-img{ width: 64px; height: 64px; }
+    .pedido-carrinho-nome{ font-size: 15px; }
+    .pedido-carrinho-actions{ position: static; margin-left: auto; }
 }
