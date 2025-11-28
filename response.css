@@ -1,3 +1,163 @@
+/* Responsividade para dispositivos muito pequenos (max-width: 350px) */
+@media (max-width: 350px) {
+
+    /* Nav */
+    #menu {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #title {
+        font-size: 22px;
+        order: 1;
+    }
+
+    .menu-nav {
+        font-size: 15px;
+    }
+
+    #menu {   /* icone do menu */
+        display: block;
+        order: 2;
+    }
+
+    #itens{
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(130, 0, 181);
+        padding: 10px 0;
+    }
+
+    #itens.active {
+        display: flex;
+    }
+    
+    .menu-nav a {
+        padding: 8px 10px;
+    }
+
+    /* Açai Section */
+    .acai-texto h1 {
+        font-size: 36px;
+    }
+
+    .acai-texto p {
+        font-size: 14px;
+    }
+
+    /* Sobre */
+    .sobre-sc {
+        padding: 50px 15px;
+    }
+
+    .sobre-sc p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    /* Produtos */
+    .produto-item {
+        padding: 12px;
+    }
+
+    .produto-item img {
+        width: 70vw;
+    }
+
+    .produto-item p {
+        font-size: 13px;
+    }
+
+    /* Avaliações */
+    .avaliacao-item {
+        width: 85vw;
+        padding: 12px;
+    }
+
+    .avaliacao-item p {
+        font-size: 13px;
+    }
+
+    /* Contato */
+    .contato-itens {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato-itens form {
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .contato-itens iframe {
+        width: 90vw;
+        height: 250px;
+        margin-right: 0;
+    }
+
+    /* Pedido */
+    .pedido-item {
+        width: 90vw;
+        padding: 12px;
+        margin: 8px auto;
+    }
+
+    .pedido-item img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 12px;
+    }
+
+    .pedido-item h2 {
+        font-size: 18px;
+    }
+
+    .pedido-lista p {
+        font-size: 11px;
+    }
+
+    .pedido-info button {
+        font-size: 12px;
+        padding: 6px 10px;
+        margin-left: 0;
+    }
+
+    .finalizar-pedido {
+        width: 90vw;
+        padding: 15px 10px;
+    }
+
+    .finalizar-pedido h2 {
+        font-size: 18px;
+    }
+
+    .finalizar-pedido p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 10px;
+    }
+
+    .icones img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
 @media (max-width: 534px) and (min-width: 350px){
 
     /* Nav */
@@ -364,6 +524,9 @@
         text-align: center;
     }
 }
+
+
+
 
 
 

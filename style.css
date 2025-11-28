@@ -460,6 +460,8 @@ nav a{
     border-radius: 8px;
     align-items: flex-start;
     box-sizing: border-box;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 
